@@ -22,4 +22,4 @@
 // console.log("2" < undefined);
 
 // P4: Strictly check comparison ===
-console.log(2 === 2);
+console.log(2 === "2");
