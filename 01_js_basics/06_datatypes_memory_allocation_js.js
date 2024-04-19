@@ -1,5 +1,5 @@
+// T10:
 /*
-
 Basically there are 2 types of memory allocations
 Stack (Primitive)           // this will make copy of our datatype and return value.
 Heap (Non-Primitive)        // this will make original reference of our value. Heap will not create copy.
