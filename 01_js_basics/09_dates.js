@@ -30,5 +30,19 @@ let myDate = new Date();
 
 let todayDate = new Date();
 console.log(todayDate.getMonth());                          // output:  3 -- 0 based index
+console.log(todayDate.getMonth() + 1);                      // output:  4 -- 1 based index, to print the exact month  
 console.log(todayDate.getFullYear());                       // output:  2024
 console.log(todayDate.getDate());                           // output:  21
+
+
+console.log(`Today is ${todayDate.getDate()}st day of the ${todayDate.getMonth()}rd month of the year ${todayDate.getFullYear()}`);
+
+let newDate = new Date();
+console.log(newDate.toLocaleString('default', {
+    todayDate: "todayDate"                                  // output:  21/04/2024, 11:07:44 pm
+}));
+
+let newDate1 = new Date();
+console.log(newDate1.toLocaleString('default', {
+    weekday: "long"                                         // output:  Sunday
+}));
