@@ -35,9 +35,17 @@
 // console.log(newArray2);                         // output: 10,20,30,40,50  -- in strings, because join converted this into strings.
 // console.log(typeof newArray2);                  // output: string
 
+// T16: Slice and Splice Methods
 
-// slice and splice
+let array1 = [5,10,15,20,25];
 
+console.log("A = ", array1);
 
+const array2 = array1.slice(1, 3);
+console.log("B = ", array2);                            // output:  [10, 15]     -- this includes the elements from index 1 to 3. The last value (3) will not be shown. -- final range not included
 
+const array3 = array1.splice(1, 3);    
 
+console.log("A = after using splice = ", array1);       // output:  [ 5, 25 ]    -- splice method have interchanged the values, like which was showing using slice. The splice have removed the slice values and shows others. 
+
+console.log("C = ", array3);                            // output:  [10, 15, 20] -- this includes the elements from index 1 to 3. This will show all the elements between and including 1 to 3.  -- final range included.
