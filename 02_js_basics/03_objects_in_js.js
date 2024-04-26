@@ -52,15 +52,18 @@ const teacherRecord = {
     scale: 19
 }
 
-teacherRecord.greeting = function() {
-    console.log("Hello, I'm Teacher!");
-}
-
-// console.log(teacherRecord.greeting());           // ouutput: Hello, I'm Teacher!
-// console.log(teacherRecord.greeting);
-
-// teacherRecord.geetingTwo = function() {
-//     console.log("Greetings!")
+// teacherRecord.greeting = function() {
+//     console.log("Hello, I'm Teacher!");
 // }
 
-// console.log(teacherRecord.geetingTwo);
+// console.log(teacherRecord.greeting);            
+// console.log(teacherRecord.greeting());          
+
+teacherRecord.geetingTwo = function() {
+    console.log("Hello!");
+    console.log(`Hello!, my name is ${this.name} and my age is ${this.age}`);           // using String manipulations and this method.
+}
+
+console.log(teacherRecord.geetingTwo);
+console.log(teacherRecord.geetingTwo());
+
