@@ -89,9 +89,6 @@ function logoutUserMessage(username = "Someone"){                  // we can mak
 console.log(logoutUserMessage());                                   // Now it's not giving the undefined.
 
 
-// T23:     Some more concept/situations of Functions
-
-
 
 
 
