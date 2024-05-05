@@ -1,1 +1,1 @@
-// Something important
+// Something important about JavaScript
