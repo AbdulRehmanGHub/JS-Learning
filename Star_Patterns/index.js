@@ -227,3 +227,5 @@ for (i = 2; i <= x; i++) {
 }
 
 display.innerHTML = star;
+
+// // new pattern here
