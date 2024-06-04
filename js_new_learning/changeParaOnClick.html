@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<style>
+    body {
+        text-align: center;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        background-color: #212121;
+        color: white;
+        font-size: 20px;
+    }
+
+    p {
+
+        background-color: green;
+
+    }
+
+    button {
+        padding: 20px;
+        width: 160px;
+        background-color: green;
+        color: white;
+        font-size: 20px;
+        border: 1px solid white;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+
+    <p id="paragraph">Click the below button to change this paragraph.</p>
+
+    <button onclick="changePara()" id="btn">Click Me</button>
+
+
+    <script>
+
+        function changePara() {
+            document.getElementById('paragraph').innerHTML = "Congratulations! paragrpah has been changed."
+
+            document.getElementById('paragraph').style.backgroundColor = "blue";
+            document.getElementById('btn').style.backgroundColor = "blue";
+
+        }
+
+    </script>
+
+</body>
+
+</html>
