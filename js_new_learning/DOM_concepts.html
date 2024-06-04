@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>Adding Content using JavaScript</h1>
+
+    <button onclick="clickMe()">Click</button>
+    <p id='btn-res'></p>
+
+    <button onclick="alertBtn()">Click to Show Alert</button>
+
+    <br><br>
+
+    <button onclick="printPage()">Click to Print this Page</button>
+
+
+    <script>
+
+        document.write('<br>');
+        document.write('<br>');
+
+        document.write(11 + 14);
+
+        document.write('<br>');
+
+        document.write("Hello JavaScript!");
+
+        document.write("<br>");
+
+        document.write("My DoB is " + 4 + " Oct " + 2000);
+
+
+        document.write("<br>");
+        document.write("<br>");
+
+        // backticks method -- recommended to use this.
+        document.write(`My DoB is 04 Oct 2000`);
+
+        document.write("<br>");
+
+        // must read datatypes declaration etc to familiar with these strings, numbers etc.
+
+        document.write("3" + "4" + 9 + 2);
+        document.write("<br>");
+        document.write(9 + 2 + "4");
+
+
+        function clickMe() {
+            document.write("You've clicked the button");
+            document.write("<br>");
+            document.write(10 + 5);
+
+        }
+
+        function alertBtn() {
+            alert("WoW! you've clicked on alert Button.");
+            window.alert(9 * 10);
+
+        }
+
+        // this will not show in page, this will show only in terminal or console
+        console.log("how are you!");
+
+
+        function printPage() {
+            window.print();
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
