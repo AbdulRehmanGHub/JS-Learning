@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    body {
+        background-color: #212121;
+        color: white;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h1>JavaScript Functions</h1>
+
+    <p id="result"></p>
+
+    <!-- another -->
+    <h1>JavaScript Functions 2</h1>
+    <p id="res"></p>
+
+
+    <script>
+
+        function myFunction(num1, num2) {
+            return num1 * num2;
+        }
+
+
+        let result = myFunction(10, 200);
+        document.getElementById("result").innerHTML = result;
+        document.getElementById("result").style.backgroundColor = "green";
+        document.getElementById("result").style.fontWeight = "bold";
+        document.getElementById("result").style.fontSize = "40px";
+
+        // another
+
+        function toCelsius(f) {
+        return (4/9) * (f-32);
+        }
+
+        let value = toCelsius(77);
+        document.getElementById("res").innerHTML = value;
+
+    </script>
+
+</body>
+
+</html>
