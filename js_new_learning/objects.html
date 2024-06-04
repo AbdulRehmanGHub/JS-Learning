@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    body {
+        background-color: #212121;
+        color: #fff;
+        text-align: center;
+    }
+
+    h1 {
+        color: green;
+        background-color: yellow;
+    }
+</style>
+
+<body>
+    <h1>JavaScript Objects</h1>
+    <hr>
+    <hr>
+    <h2>Object Methods</h2>
+    <p>A method is a function definition stored as a property value.</p>
+
+    <h2 id="res"></h2>
+
+    <hr>
+
+    <h2>Objects are Mutable</h2>
+
+    <p>Changes to a copy of an object will also change the original object:</p>
+
+    <h2 id="result"></h2>
+
+    <hr>
+
+    <script>
+        const person = {
+            firstName: "Abdul",
+            lastName: "Rehman",
+            id: 5566,
+            fullName: function () {
+                return `The Full Name is ${this.firstName} ${this.lastName} and ID is: ${this.id}`;
+            }
+        };
+
+        document.getElementById("res").innerHTML = person.fullName();
+        document.getElementById("res").style.color = "yellow";
+
+
+        // another
+
+        const person1 = {
+            firstName: "Ali",
+            lastName: "Rehman",
+            age: 50,
+            eyeColor: "blue"
+        };
+
+        // Create a Copy
+        const x = person;
+
+        // Change Age
+        x.age = 11;
+
+        document.getElementById("result").innerHTML =
+            person.firstName + " is " + person.age + " years old.";
+        document.getElementById("result").style.color = "yellow";
+
+
+    </script>
+</body>
+
+</html>
