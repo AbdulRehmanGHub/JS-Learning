@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    body {
+        text-align: center;
+        background-color: #212121;
+        color: white;
+    }
+
+    button {
+        background-color: yellow;
+        font-weight: bold;
+        padding: 20px;
+        font-size: 14px;
+        border: 1px solid white;
+    }
+
+    .result-container {
+        border: 1px solid white;
+        margin-top: 20px;
+        font-weight: bold;
+        font-family: sans-serif;
+
+    }
+</style>
+
+<body>
+
+    <h1>Show Current Date and Time</h1>
+
+    <button onclick="clickMe()">Click to Show Date and Time</button>
+
+    <div class="result-container">
+        <p id='res'></p>
+    </div>
+
+
+    <script>
+        function clickMe() {
+            document.getElementById('res').innerHTML = new Date();
+        }
+    </script>
+
+</body>
+
+</html>
