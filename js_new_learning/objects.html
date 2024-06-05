@@ -16,22 +16,27 @@
 
 <body>
     <h1>JavaScript Objects</h1>
-    <hr>
-    <hr>
+    <hr><hr>
     <h2>Object Methods</h2>
     <p>A method is a function definition stored as a property value.</p>
-
     <h2 id="res"></h2>
 
-    <hr>
+    <hr> <br>
 
+    <!-- another -->
     <h2>Objects are Mutable</h2>
-
     <p>Changes to a copy of an object will also change the original object:</p>
-
     <h2 id="result"></h2>
 
+    <hr><br>
+
+    <!-- another -->
+    <h2>Deleting a Property</h2>
+    <p id="one-res"></p>
+    <h2 id="two-res"></h2>
+
     <hr>
+
 
     <script>
         const person = {
@@ -62,11 +67,38 @@
         // Change Age
         x.age = 11;
 
+        // by dot . method.
         document.getElementById("result").innerHTML =
-            person.firstName + " is " + person.age + " years old.";
+        person.firstName + " is " + person.age + " years old.";
+
+        // or by doing this [] method.
+        document.getElementById("result").innerHTML =
+        person.firstName + " is " + person["id"] + " years old.";
+
         document.getElementById("result").style.color = "yellow";
 
 
+        // another
+
+        const person3 = {
+        firstname: "ABC",
+        lastname: "XYZ",
+        age: 50,
+        eyecolor: "blue"
+        };
+
+        // deleting the value, this will delete both the property and it's value
+        delete person3.age;
+
+        document.getElementById("one-res").innerHTML =
+        person3.firstname + " is " + person3.age + " years old.";
+
+        delete person3["firstname"];
+
+        document.getElementById("two-res").innerHTML =
+        person3.firstname + " eye color is: " + person3.eyecolor;
+
+        document.getElementById("two-res").style.color = "yellow";
     </script>
 </body>
 

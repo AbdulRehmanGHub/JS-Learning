@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: purple; color: white; text-align: center">
+<h1>JavaScript Objects</h1>
+<h2>Display Properties</h2>
+
+<p id="res1"></p>
+<p id="res2"></p>
+
+
+<script>
+
+// Create an Object
+const person = {
+  name: "Abdul Rehman",
+  age: 30,
+  city: "New York"
+};
+
+// Create an Array
+const myArray = Object.values(person);
+
+// Build a loop / Text
+let text = "";
+for (let x in person) {
+  text += person[x] + " ";
+};
+
+// Display the Text
+document.getElementById("res1").innerHTML = text.toUpperCase() + "<br> <br>" + myArray;
+
+
+// another
+
+// Create an Object
+const person2 = {
+  name: "Rehman",
+  age: 30,
+  city: "Lahore"
+};
+
+// Display JSON stringify method
+document.getElementById("res2").innerHTML = JSON.stringify(person2);
+</script>
+
+</body>
+</html>
