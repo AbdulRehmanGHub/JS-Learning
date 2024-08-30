@@ -117,3 +117,4 @@ fruits = 'pineapple', 'apple', 'new', 'cherry', 'lemon', 'mango']
 fruits.sort();
 result:  ['apple', 'cherry', 'lemon', 'mango', 'new', 'pineapple']
 
+
