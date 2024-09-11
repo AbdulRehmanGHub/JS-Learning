@@ -275,7 +275,89 @@
    - d) Width of grid columns
    - **Answer:** b) Number of rows in the grid
 
+
+### More HTML, CSS
+### **HTML MCQs:**
+
+**11) Which tag is used to create an unordered list?**
+- **Answer:** a) `<ul>`
+
+**12) Which attribute of the `<a>` tag specifies the URL of the page the link goes to?**
+- **Answer:** a) `href`
+
+**13) How do you create a table row in HTML?**
+- **Answer:** b) `<tr>`
+
+**14) Which tag is used to define a table header?**
+- **Answer:** a) `<th>`
+
+**20) Which of the following allows you to store data on the client side?**
+- **Answer:** d) Local Storage
+
 ---
+
+### **CSS MCQs:**
+
+**21) Which of the following is the correct syntax for applying a style to an HTML element?**
+- **Answer:** a) `selector {property: value;}`
+
+**22) Which selector is used to select elements with a specific class?**
+- **Answer:** c) `.`
+
+**23) How do you select an element with the ID "header"?**
+- **Answer:** b) `#header { }`
+
+**24) Which selector is used to select all elements on a page?**
+- **Answer:** a) `*`
+
+**25) Which CSS property is used to change the text color of an element?**
+- **Answer:** b) `color`
+
+**26) What does the following CSS selector select: `div > p`?**
+- **Answer:** b) All `<p>` elements inside `<div>` elements
+
+**27) Which of the following properties is NOT part of the CSS box model?**
+- **Answer:** d) `outline`
+
+**28) Which property is used to change the background color of an element?**
+- **Answer:** b) `background-color`
+
+**29) What value of the display property makes an element disappear from the page layout?**
+- **Answer:** b) `none`
+
+**30) Which CSS property controls the stacking order of elements?**
+- **Answer:** a) `z-index`
+
+**31) Which position value allows an element to be positioned relative to its normal position?**
+- **Answer:** b) `relative`
+
+**32) Which property is used to align items along the main axis in Flexbox?**
+- **Answer:** b) `justify-content`
+
+**33) Which of the following properties defines the columns of a grid container?**
+- **Answer:** a) `grid-template-columns`
+
+**34) What is the default value of the flex-direction property?**
+- **Answer:** a) `row`
+
+**35) Which property is used to create a responsive layout in CSS Grid?**
+- **Answer:** c) `grid-template-columns`
+
+**36) Which property is used to change the font of an element?**
+- **Answer:** a) `font-family`
+
+**37) How do you include Google Fonts in a CSS file?**
+- **Answer:** d) a and b
+
+**38) Which property is used to add shadow to text?**
+- **Answer:** a) `text-shadow`
+
+**39) Which of the following is a correct media query?**
+- **Answer:** d) All of the above
+
+**40) Which term describes designing websites to look good on all devices?**
+- **Answer:** a) Responsive Design
+
 
 ### **Basic JavaScript Syntax and Data Types (6 MCQs)**
 
@@ -380,4 +462,69 @@
 
 .addEventListener("click", function(){})`
 
+
+### More JS
   
+**41) How do you declare a JavaScript variable?**
+- **Answer:** d) All of the above
+
+**42) Which of the following is NOT a JavaScript data type?**
+- **Answer:** d) character
+
+**43) What is the result of 2 + "2" in JavaScript?**
+- **Answer:** b) 22
+
+**44) Which operator is used to assign a value to a variable?**
+- **Answer:** b) =
+
+**45) What is the correct way to write a JavaScript array?**
+- **Answer:** a) var colors = ["red", "green", "blue"];
+
+**46) Which of the following is the strict equality operator in JavaScript?**
+- **Answer:** b) ===
+
+**47) Which statement is used to stop a loop in JavaScript?**
+- **Answer:** a) break
+
+**48) What will the following code output:**
+
+    if (false) { console.log("True"); }  
+    else { console.log("False"); }  
+
+- **Answer:** b) False
+
+**49) How do you write a JavaScript switch statement?**
+- **Answer:** b) switch(x) {case "a": break;}
+
+**50) Which of the following is the correct way to define a function in JavaScript?**
+- **Answer:** d) All of the above
+
+**51) Which of the following is the correct way to define a function in JavaScript?**
+- **Answer:** d) a and b
+
+**52) Which property is used to change the content of an HTML element?**
+- **Answer:** d) All of the above
+
+**53) How do you add an event listener in JavaScript?**
+- **Answer:** d) a and b
+
+**54) What is the correct syntax for referring to an external script called "script.js"?**
+- **Answer:** c) <script src="script.js">
+
+**55) Which event occurs when the user clicks on an HTML element?**
+- **Answer:** c) onclick
+
+**56) How do you prevent a form from being submitted in JavaScript?**
+- **Answer:** a) event.preventDefault()
+
+**57) Which JavaScript method can be used to validate form input?**
+- **Answer:** b) checkValidity()
+
+**58) Which keyword is used to define a constant in ES6?**
+- **Answer:** a) const
+
+**59) Which method is used to handle a successful promise resolution?**
+- **Answer:** a) then()
+
+**60) Which of the following is the correct JSON format?**
+- **Answer:** a) {"name": "John", "age": 30}
