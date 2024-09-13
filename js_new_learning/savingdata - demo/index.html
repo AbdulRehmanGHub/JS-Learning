@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Common styles for profile and edit form */
+        #editProfileForm,
+        #profile {
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            background-color: #f9f9f9;
+        }
+
+        #editProfileForm input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin-right: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Admin Profile Section -->
+<div id="adminProfile">
+    <!-- Profile View -->
+    <div id="profile" style="display: block;">
+        <h2>Admin Profile</h2>
+        <p>Username: <span id="adminUsername">admin123</span></p>
+        <p>Email: <span id="adminEmail">admin@example.com</span></p>
+        <button onclick="editProfile()">Edit Profile</button>
+    </div>
+
+    <!-- Edit Form View -->
+    <div id="editProfileForm" style="display: none;">
+        <h2>Edit Admin Profile</h2>
+        <form>
+            <label for="editAdminUsername">Username:</label>
+            <input type="text" id="editAdminUsername" value="admin123"><br>
+
+            <label for="editAdminEmail">Email:</label>
+            <input type="email" id="editAdminEmail" value="admin@example.com"><br>
+
+            <button type="button" onclick="saveProfile()">Save</button>
+            <button type="button" onclick="cancelEditProfile()">Cancel</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    // Profile Functions (For Admin)
+    function editProfile() {
+        // Hide the profile view and show the edit form
+        document.getElementById("profile").style.display = "none";
+        document.getElementById("editProfileForm").style.display = "block";
+    }
+
+    function cancelEditProfile() {
+        // Show the profile view and hide the edit form
+        document.getElementById("profile").style.display = "block";
+        document.getElementById("editProfileForm").style.display = "none";
+    }
+
+    function saveProfile() {
+        // Example save logic: Update profile values
+        var newUsername = document.getElementById("editAdminUsername").value;
+        var newEmail = document.getElementById("editAdminEmail").value;
+
+        // Update the profile view with new data
+        document.getElementById("adminUsername").innerText = newUsername;
+        document.getElementById("adminEmail").innerText = newEmail;
+
+        // Hide the edit form and show the profile view again
+        cancelEditProfile();
+    }
+</script>
+
+</body>
+
+</html>
