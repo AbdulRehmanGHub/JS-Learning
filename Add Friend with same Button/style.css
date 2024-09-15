@@ -11,11 +11,19 @@ body{
     font-family: roboto, sans-serif;
     font-size: 62.5%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    gap: 8rem;
+}
+
+main{
+    gap: 5rem;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 6rem;
-    cursor: default;
 }
 
 .top-heading{
