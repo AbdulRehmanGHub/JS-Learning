@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #833ab4;
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+
+    font-family: roboto, sans-serif;
+    font-size: 62.5%;
+    cursor: default;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-heading {
+    text-align: center;
+    color: #ff009d;
+    background-color: #fff;
+    margin: 30px 0 10px 0;
+    border-radius: 20px;
+    padding: 10px;
+    transition: ease-in-out 0.2s;
+}
+
+.top-heading:hover {
+    color: #fff;
+    background-color: #ff009d;
+}
+
+.container {
+    width: 320px;
+    height: 480px;
+    border: 2px solid #fff;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: .8rem;
+    overflow: hidden;
+    background-color: ghostwhite;
+    position: relative;
+}
+
+.stories-container {
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid #555;
+    padding: 0 4px;
+
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.stories-container::-webkit-scrollbar {
+    display: none;
+}
+
+.story-box {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #ff009d;
+    border-radius: 50%;
+    margin: 6px 2px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.story-box:hover {
+    opacity: .9;
+}
+
+.story-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.viewstory {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    z-index: 9;
+    display: none;
+}
+
+.storybar {
+    height: 4px;
+    width: 96%;
+    margin: 10px auto;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    position: absolute;
+    height: 100%;
+    background-color: #3498db;
+    width: 0;
+    animation: progressBar 5s ease-in-out forwards;
+    transition: all linear .3s;
+}
+
+@keyframes progressBar {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 98%;
+    }
+}
+
+footer {
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+    margin: 3rem 0;
+}
+
+hr {
+    border: 1px solid rgb(247, 247, 255, 0.3);
+}
