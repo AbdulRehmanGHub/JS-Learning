@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: ghostwhite;
+    font-size: 62.5%;
+    font-family: roboto, sans-serif;
+}
+
+.container{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+#bulb{
+    width: 240px;
+    height: 240px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    padding: 30px;
+    font-size: 24px;
+    cursor: none;
+}
+
+#btn{
+    width: 80px;
+    height: 40px;
+    font-weight: 800;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#btn:hover{
+    background-color: black;
+    color: #fff;
+}
