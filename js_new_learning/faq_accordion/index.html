@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordiann</title>
+
+    <style>
+        .container {
+            width: 70%;
+        }
+
+        .question {
+            background-color: ghostwhite;
+            border: 1px solid grey;
+            border-radius: 4px;
+        }
+
+        .details {
+            background-color: ghostwhite;
+            border: 1px solid grey;
+            border-radius: 4px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- FAQ Accordian -->
+    <h1>Accordion</h1>
+
+    <div class="container">
+        <div class="question">
+            <p>How can I get help if I'm stuck on a challenge?</p>
+        </div>
+        <div class="details">
+            <p>The best (and quickest) way to get help on a challenge is in our Discord server. There are thousands of
+                other developers in there, so it's a great place to ask questions. We even have a dedicated "help"
+                channel! If you haven't joined yet, you can get an invite to our Discord server here.</p>
+        </div>
+    </div>
+
+    <script>
+        let question = document.querySelector(".question");
+        let para = document.querySelector(".details");
+
+        let flag = 0;
+        question.addEventListener("click", function () {
+            if (flag == 0) {
+                para.style.display = "block";
+                flag = 1;
+            } else {
+                para.style.display = "none";
+                flag = 0;
+            }
+        });
+    </script>
+</body>
+
+</html>
