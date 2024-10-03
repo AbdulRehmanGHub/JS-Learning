@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: teal;
+    font-size: 62.5%;
+    font-family: roboto, sans-serif;
+    cursor: default;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1.2rem .2rem;
+}
+
+.top {
+    margin-top: 2rem;
+}
+
+.top h1 {
+    font-size: 2.2rem;
+    color: #fff;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.search input {
+    width: 70%;
+    padding: 1rem .2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 20px;
+}
+
+.search i {
+    font-size: 1.2rem;
+    position: absolute;
+    right: 16%;
+    cursor: pointer;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .movies-box {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    flex-wrap: wrap;
+}
+
+.movies-box .movie-con {
+    width: 260px;
+    min-height: 360px;
+    border: 1px solid black;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    box-shadow: 3px 3px 4px gainsboro;
+    transition: ease-in-out .2s;
+}
+
+.movie-con:hover {
+    box-shadow: 4px 3px 8px white;
+}
+
+.movie-con img {
+    width: 100%;
+    height: 360px;
+}
+
+.movie-con .movie-text {
+    width: 100%;
+    height: 15%;
+    padding: .4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .6rem;
+    background-color: #fff;
+}
+
+.movie-text h3 {
+    font-size: .8rem;
+}
+
+.movie-text p {
+    font-size: .8rem;
+}
