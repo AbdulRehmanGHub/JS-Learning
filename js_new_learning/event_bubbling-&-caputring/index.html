@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling and Capturing</title>
+</head>
+
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        width: 600px;
+        height: 500px;
+        border: 1px solid black;
+        background-color: darkgrey;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .box4 {
+        width: 450px;
+        height: 450px;
+        border: 1px solid black;
+        background-color: aqua;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .box3 {
+        width: 380px;
+        height: 380px;
+        border: 1px solid black;
+        background-color: blue;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .box2 {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        background-color: lawngreen;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .box1 {
+        width: 250px;
+        height: 250px;
+        border: 1px solid black;
+        background-color: lightseagreen;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .box0 {
+        width: 120px;
+        height: 120px;
+        border: 1px solid black;
+        background-color: orange;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    p {
+        width: 80px;
+        height: 80px;
+        border: 1px solid black;
+        background-color: yellow;
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <h1>Event Bubbling and Capturing in JS</h1>
+    <div class="container"> container
+        <div class="box4"> box4
+            <div class="box3"> box3
+                <div class="box2"> box2
+                    <div class="box1"> box1
+                        <div class="box0"> box0
+                            <p>Lorem ipsum dolor sit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
