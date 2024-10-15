@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:mediumspringgreen;
+    font-size: 62.5%;
+}
+
+.container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: relative;
+}
+
+.container img {
+    border-radius: 8px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+button {
+    position: fixed;
+    right: 10%;
+    bottom: 10%;
+    font-size: 3rem;
+    border: 2px solid #fff;
+    background-color: slateblue;
+    color: #fff;
+    border-radius: 60%;
+    padding: 1rem;
+    cursor: pointer;
+}
