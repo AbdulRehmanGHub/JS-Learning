@@ -152,3 +152,6 @@ CreateSt.prototype.birthYear = function () {
 
 const stu7 = new CreateSt("wali", "shah", 1025, 22);
 const stu8 = new CreateSt("khan", "bahadur", 1027, 24);
+
+
+// // We will see more in Class in JS folder
