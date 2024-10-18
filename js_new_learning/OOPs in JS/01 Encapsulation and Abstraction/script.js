@@ -130,3 +130,25 @@ createStus.commonMethods = {
 
 const stu5 = createStus("ahmed", "ali", 1015, 22);
 const stu6 = createStus("noman", "khan", 1017, 24);
+
+// // The above method is good, but there is again some problems of OOPs concepts there, for resolving that we have to make it fix. We are going to use the Constructor function and this keyword. It is optional but recommended to start the name of contstructor function with capital letter like CreateSt.
+
+function CreateSt(f_name, l_name, roll_no, age) {
+  this.f_name = f_name,
+  this.l_name = l_name,
+  this.roll_no = roll_no,
+  this.age = age;
+}
+
+CreateSt.prototype.birthYear = function () {
+  return new Date().getFullYear() - this.age;
+};
+
+// // for getting Full Name
+// CreateSt.prototype.fullName = function() {
+//     return this.f_name + " " + this.l_name;
+// }
+// // stu7.fullName()      ==      output: wali shah
+
+const stu7 = new CreateSt("wali", "shah", 1025, 22);
+const stu8 = new CreateSt("khan", "bahadur", 1027, 24);
