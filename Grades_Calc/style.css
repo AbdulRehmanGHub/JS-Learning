@@ -57,7 +57,7 @@ body {
 }
 
 .layout-left img:hover {
-    transform: scale(1.1);
+    transform: scale(1.04);
     transition: ease-in-out .4s;
 }
 
@@ -106,4 +106,61 @@ body {
 
 #result {
     font-size: 1.6vw;
+}
+
+@media (max-width: 600px) {
+    .heading h2 {
+        font-size: 1.6rem;
+    }
+
+    .container{
+        gap: .8rem;
+    }
+
+    .layout {
+        min-width: 96%;
+        border-radius: 6px;
+        padding: .4rem;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .layout-left {
+        width: 30vw;
+        gap: .2rem;
+    }
+
+    .layout-left img {
+        width: 25vw;
+    }
+
+    .layout-left h3 {
+        font-size: 4vw;
+    }
+
+    .layout-right {
+        width: 100%;
+        padding: 8px;
+        gap: 10px;
+    }
+
+    .layout-right input {
+        width: 84%;
+        padding: .4rem;
+        border-radius: 4px;
+        font-size: .9rem;
+    }
+
+    .layout-right #calc_btn {
+        width: 34vw;
+        font-size: 1rem;
+        font-weight: 300;
+        border-radius: 6px;
+    }
+
+    #result {
+        font-size: 3vw;
+        background-color: brown;
+    }
 }
