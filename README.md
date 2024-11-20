@@ -1,3 +1,6 @@
 # JS-Learning
-In this repository, I will add my JavaScript Learning. Projects, Code, etc.
-I will add my daily learnings of JS
+
+<p>
+In this repository, I will add my JavaScript <b>Learning. Projects, Code, Practice Questions</b> etc.
+I will add my daily learnings of JS here in this repo.
+</p>
