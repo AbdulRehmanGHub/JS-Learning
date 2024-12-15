@@ -1,13 +1,53 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Modern Star Pattern</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="star-container">
+// // html
+<div class="pyramid">
+  <div class="row">
     <div class="star"></div>
   </div>
-  <script src="script.js"></script>
-</body>
-</html>
+  <div class="row">
+    <div class="star"></div>
+    <div class="star"></div>
+  </div>
+  <div class="row">
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+  </div>
+  <div class="row">
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+  </div>
+</div>
+
+
+// // css
+.pyramid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+  margin: 5px;
+}
+
+
+// // js
+function printStarPattern(n) {
+  if (n === 0) {
+    return;
+  }
+
+  console.log("*".repeat(n));
+  printStarPattern(n - 1);
+}
+
+printStarPattern(5);
